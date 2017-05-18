@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Pop Shop</title>
+<link rel="stylesheet" type="text/css" href="popshop.css" />
+<meta charset="utf-8">
+<style>
+#title		{font-family:tahoma;}
+.bold		{font-weight:bold;
+			 color:#DF5D88;}
+.list		{padding:0.5em;
+			 margin-right:40.0em;}
+</style>
+<script type="text/javascript">
+		var i=0;
+		
+		var slides = new Array();
+		slides[0] = "images/slide1.jpg";
+		slides[1] = "images/slide2.jpg";
+		slides[2] = "images/slide3.jpg";
+		slides[3] = "images/slide4.jpg";
+		
+		var index = slides.length-1;
+
+		function initiateSlides()
+		{
+			var image = document.getElementById("slide");
+			image.src=slides[i];
+			
+			if (i < index)
+			{
+				i++;
+			}
+			else
+			{
+				i = 0;
+			}
+			
+			setTimeout("initiateSlides()",1500);
+		}
+		
+		function addLoadEvent(func)
+		{
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function')
+			{
+				window.onload = func;
+			}
+			else
+			{
+				window.onload = function()
+				{
+					if (oldonload)
+					{
+						oldonload();
+					}
+				func();
+				}
+			}
+		}
+		
+		addLoadEvent(function()
+		{
+			initiateSlides();
+		});
+</script>
+</head>
+<body>
+<div id="wrapper">
+<header>
+	<h1><img src= "images/logo.png">The <span id="title">POP</span> Shop</h1>
+</header>
+<main>
+	<nav>
+	<ul>
+	 <li><a href = "popshop.html">HOME</a></li>
+	 <li><a href = "products.html">PRODUCTS</a></li>
+	 <li><a href = "contact.html">CONTACT</a></li>
+	 <li><a href = "store.html">STORE</a></li>
+	 <li><a href = "sitemap.html">SITEMAP</a></li>
+	</ul>
+	</nav>
+<h1 class="heading">Welcome</h1>
+	<p>Hey! Welcome to The <span class="bold">POP</span> Shop. Your one stop shop for all things <span class="bold">POP</span>! 
+	Have you ever wished you could go back in time and consume all those delicious beverages that just arn't around anymore?
+	Well don't worry the <span class="bold">POP</span> shop has you covered! We have the largest variety of soda then any other 
+	store in Canada!</p> 
+	<p>Not to mention with our <span class="bold" style="color:purple">SODA CREATION STATION</span> we can whip up
+	any type of soda you've had. You name it, we've got the flavors to make it.</p> 
+	<p>We have store fronts in 9 different provinces including: <span class="rightborder"><img id="slide" src="slide1.jpg"/> </span></p>
+		<div class="list">
+		<ul>
+		<li>British Columbia</li>
+		<li>Alberta</li>
+		<li>Manitoba</li>
+		<li>Saskatchewan</li>
+		<li>Nova Scotia</li>
+		<li>Ontario</li>
+		<li>Quebec</li>
+		<li>Prince Edward Island</li>
+		<li>New Brunswick</li>
+		</ul>
+		</div>
+	<p class="padtop">And we're excited to announce that soon we'll be expanding our operations into the United States and some European countries so 
+	keep your ears pealed you might have a <span class="bold">POP</span> Shop coming into your city soon!</p>
+	
+</main>
+<footer>
+	<h2> Remember to HOP on by to the <span class="bold">POP</span> Shop for all your beverage needs</h2>
+	<p>&copy; British Columbia Institute of Technology</p>
+</footer>
+</div>
+</body>
+</html>

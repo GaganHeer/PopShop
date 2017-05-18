@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Pop Shop</title>
+<link rel="stylesheet" type="text/css" href="popshop.css" />
+<meta charset="utf-8">
+<style>
+#title		{font-family:tahoma;}
+.bold		{font-weight:bold;
+			 color:#DF5D88;}
+.list		{padding:0.5em;
+			 margin-right:40.0em;}
+</style>
+<script>
+function validate()
+	{
+		valid=true;
+		var cardnumber= document.getElementById("cardnumber").value;
+		var cvc= document.getElementById("cvc").value;
+		var name= document.getElementById("name").value;
+		var email= document.getElementById("email").value;
+		var num1= document.getElementById("num1").value;
+		var num2= document.getElementById("num2").value;
+		var num3= document.getElementById("num3").value;
+		var billing= document.getElementById("billing").value;
+		var city= document.getElementById("city").value;
+		var province= document.getElementById("province").value;
+		var zipcode= document.getElementById("zipcode").value;
+		var quantity= document.getElementById("quantity").value;
+		
+		if (cardnumber == "" || cvc == "" || name == "" || email == "" || num1 == "" || num2 == "" || num3 == "" || billing == "" || city == "" || province == "" || zipcode == "" || quantity == "")
+		{
+		alert("Please fill in the whole form");
+		valid=false;
+		}
+		else
+		{
+		alert("Thanks for your purchase");
+		valid=true;
+		}
+		return valid;
+	}
+</script>
+</head>
+<body>
+<div id="wrapper">
+<header>
+	<h1><img src= "images/logo.png">The <span id="title">POP</span> Shop</h1>
+</header>
+<main>
+	<nav>
+	<ul>
+	 <li><a href = "popshop.html">HOME</a></li>
+	 <li><a href = "products.html">PRODUCTS</a></li>
+	 <li><a href = "contact.html">CONTACT</a></li>
+	 <li><a href = "store.html">STORE</a></li>
+	 <li><a href = "sitemap.html">SITEMAP</a></li>
+	</ul>
+	</nav>
+<h1 class="heading">Payment</h1>
+	<form action="store.html">
+		<table>
+			<tr>
+			  <th class="alignright">Credit Card Number</th>
+			  <td><input type="text" size="12" maxlength="16" id="cardnumber">
+			  <select id="cardtype">
+			  <option value="sc">Select Card Type</option>
+			  <option value="vs">Visa</option>
+			  <option value="mc">Mastercard</option>
+			  <option value="ae">American Express</option>
+			  </select></td>
+			</tr>
+		 
+			<tr>
+			  <th class="alignright">Expiration Date</th>
+			  <td><select>
+			  <option>Month</option>
+			  <option>January</option>
+			  <option>February</option>
+			  <option>March</option>
+			  <option>April</option>
+			  <option>May</option>
+			  <option>June</option>
+			  <option>July</option>
+			  <option>August</option>
+			  <option>September</option>
+			  <option>October</option>
+			  <option>November</option>
+			  <option>December</option>
+			  </select> 
+			  <select>
+			  <option>Year</option>
+			  <option>2015</option>
+			  <option>2016</option>
+			  <option>2017</option>
+			  <option>2018</option>
+			  <option>2019</option>
+			  <option>2020</option>
+			  </select>
+			  <b>CVC</b><input type="text" maxlength="3" size="4" id="cvc"></td>
+			</tr>
+		 
+			<tr>
+			  <th class="alignright">Cardholder Name</th>
+			  <td><input type="text" size="31" id="name"></td>
+			</tr>
+		 
+			<tr>
+			  <th class="alignright">E-Mail</th>
+			  <td><input type="text" size="31" id="email"></td>
+			</tr>
+		 
+			<tr>
+			  <th class="alignright">Phone Number</th>
+			  <td><input type="text" size="1" maxlength="3" id="num1">-<input type="text" size="1" maxlength="3" id="num2">-<input type="text" size="1" maxlength="4" id="num3">
+			  <b>Quantity</b><input type="text" size="1" maxlength="2" id="quantity"></td>
+			</tr>
+		 
+			<tr>
+			  <th class="alignright">Billing address</th>
+			  <td><input type="text" size="31" id="billing"></td>
+			</tr>
+		 
+			<tr>
+			  <th class="alignright">City</th>
+			  <td><input type="text" size="15" id="city"> 
+			  <b>Province</b><input type="text" size="2" maxlength="2" id="province"></td>
+			</tr>
+		 
+		 
+			<tr>
+			  <th class="alignright">Zip Code</th>
+			  <td><input type="text" size="31" maxlength="6" id="zipcode"></td>
+			</tr>
+		 
+			<tr>
+			  <td colspan="2" class="aligncenter">
+			  <button onclick="return validate()">Purchase</button>
+			</tr>
+		</table>
+	</form>
+</main>
+<footer>
+	<h2> Remember to HOP on by to the <span class="bold">POP</span> Shop for all your beverage needs</h2>
+	<p>&copy; British Columbia Institute of Technology</p>
+</footer>
+</div>
+</body>
+</html>

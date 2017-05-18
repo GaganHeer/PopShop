@@ -1,0 +1,112 @@
+body		{background-image:url("images/background.jpg");}
+			 
+#wrapper 	{width:80%;
+			 margin-left:auto;
+			 margin-right:auto;
+			 border-radius:2.0em;
+			 padding:2em;
+			 font-family:"Comic Sans MS";
+			 background-color:#9BD643;
+			 }
+
+header		{text-align:center;
+			 color:#DF5D88;
+			 font-size:200%;
+			 padding-top:5px;}
+			 
+header h1		{margin-bottom:1.0em;
+			 margin-top:1.0em;
+			 margin-right:15%;}
+			 
+header img	{float:left;
+			 margin-left:20%;
+			 position:relative;
+			 bottom:0.5em;}
+			 
+main			{width:85%;
+			 margin-left:auto;
+			 margin-right:auto;
+			 color:#6e1633;
+			 margin-bottom:3em;}
+
+nav			{text-align:center;
+			 background-color:#DF5D88;
+			 padding:0.5em;
+			 border-radius:2.0em;}
+
+nav ul 	 	{list-style:none;}
+	   
+nav ul li 	 	{display:inline;
+			 padding:1.0em;
+			 font-weight:bold;}
+
+nav ul li a		{text-decoration:none;
+			 color:white;}
+
+.heading	{border-bottom-style:solid;
+			 text-align:left;}
+			 
+.list		{background-color:white;
+			 border-radius:2em;
+			 color:#DF5D88;}
+			 
+.rightborder{float:right;
+			 border: 0.2em solid purple;}
+			 
+.leftborder	{float:left;
+			 border: 0.2em solid purple;
+			 margin-right: 1em;}
+
+.leftimg	{float:left;
+			 padding-right:3em;}
+			 
+.rightimg	{float:right;
+			 padding-left:3em;}
+			 
+.padtop		{padding-top:1em;}
+
+.padright	{padding-right:2em;}
+
+.storetable	{background-color:white;
+			 margin-left:auto;
+			 margin-right:auto;}
+
+.storetable td {text-align:center;
+			  padding-right:2em;
+			  padding-left:2em;}
+			  
+.alignright	{text-align:right;}
+
+.aligncenter{text-align:center;}
+
+.linkcolor a:link {color:purple;}
+
+.noleft		{clear:left;}
+
+.noright	{clear:right;}
+
+.smallnav	{text-align:center;
+			 padding:0.5em;}
+
+.smallnav ul 	 {list-style:none;}
+	   
+.smallnav ul li {display:inline;
+			 padding:1.0em;
+			 font-weight:bold;}
+
+.smallnav ul li a{text-decoration:none;
+			 color:#6e1633;}
+			 
+.sitemap ul 	 {list-style:none;}
+	   
+.sitemap ul li 	 {font-weight:bold;}
+
+.sitemap ul li a{text-decoration:none;}
+			  
+footer		{text-align:center;
+			 padding-bottom:1em;}
+
+footer p		{color:#DF5D88;
+			 font-style:italic;}
+			 
+footer h2		{color:#6e1633;}
